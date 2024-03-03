@@ -1,8 +1,146 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Your Name - Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Cole Tomlinson - Portfolio</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                text-align: left;
+            }
+            header {
+                background-color: #a8f0e4;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                width: 100%;
+                font-family: 'Courier New', monospace;
+            }
+            header a {
+                color: #f894ad;
+                text-decoration: none; 
+            }
+            #about {
+                border-top: black 2px solid;
+                background-color: #adadad;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+            }
+            #about h1 {
+                font-family: Copperplate, fantasy;
+                font-size: 56px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                display: inline-block;
+            }
+            nav ul li {
+                float: left;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+            }
+            #skills {
+                background-color: #adadad; 
+                padding: 50px; 
+                text-align: center; 
+                border-bottom: black 2px solid;
+            }
+
+            #skills h1 {
+                font-family: Arial, sans-serif; 
+                text-decoration: underline; 
+                font-size: 36px; 
+            }
+
+            #skills ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around; 
+                list-style-type: none;
+                padding: 0; 
+            }
+
+            #skills ul li {
+                font-family: Arial, sans-serif; 
+                font-size: 24px; 
+                padding: 10px; 
+                width: 30%;
+                background-color: #000000; 
+                color: #ffffff;
+                margin: 10px; 
+                box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.658); 
+                border-radius: 10px;
+            }
+            #projects {
+                text-align: center;
+                padding: 20px;
+            }
+            #projects h1 {
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 46px;
+            }
+            #projectlist {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 20px;
+            }
+            .project {
+                background-color: #d8d8d8;
+                padding: 20px; 
+                border-radius: 10px;
+                width: 40%; 
+                margin: 10px; 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.719); 
+            }
+            .project h2 {
+                color: #333; 
+                font-size: 1.5em; 
+            }
+            .project p {
+                color: #666;
+                line-height: 1.6; 
+            }
+            #resume {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 25px;
+            }
+            #resume h1 {
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 46px;
+            }
+            #contact footer {
+                border-top: black 2px solid;
+                background-color: #333;
+                color: #f8f9fa;
+                padding: 20px;
+                text-align: center; 
+            }
+            #contact footer h1 {
+                font-size: 2em;
+            }
+            #contact footer a {
+                color: #94c6f8; 
+                text-decoration: none;
+            }
+            #contact footer a:hover {
+                color: #ddd;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -11,28 +149,63 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Your introduction here</p>
-        </section>
-        <section id="skills">
+        <div id="about">
+            <h1>Cole Tomlinson</h1>
+            <p>A Student enrolled at Mohawk College for Software Development [This website is for a school project, not a true representation of me] </p>
+            <p>Gained my OSSD by graduating from Nora Frances Henderson with honours</p>
+        </div>
+        <div id="skills">
             <h1>Skills</h1>
-            <!-- List your skills here -->
-        </section>
-        <section id="projects">
+            <ul>
+                <li>Proficient in many languages such as Java, C#, MySQL, Python, HTML and PHP</li>
+                <li>Excellent problem solving, communication, teamwork, adaptability and time management skills</li>
+                <li>Able to work under pressure at a fast pace</li>
+            </ul>
+        </div>
+        <div id="projects">
             <h1>Projects</h1>
-            <!-- Showcase your projects here -->
-        </section>
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <!-- Contact form or information -->
-        </section>
-        <footer>
-            <!-- Any footer content -->
-        </footer>
+            <div id="projectlist">
+                <div class="project">
+                    <h2>AI Powered Chatbot</h2>
+                    <p>Created a chatbot that uses AI to respond to user input using Python</p>
+                </div>
+                <div class="project">
+                    <h2>Top down shooter game</h2>
+                    <p>Created a top down shooter game using Unity</p>
+                </div>
+                <div class="project">
+                    <h2>Fitness management system</h2>
+                    <p>Created a fitness management system using Java</p>
+                </div>
+                <div class="project">
+                    <h2>Online store website</h2>
+                    <p>Created an online store website using HTML, CSS and PHP</p>
+                </div>
+                <div class="project">
+                    <h2>Finance Tracker</h2>
+                    <p>Created a finance tracker using MySQL and Java</p>
+                </div>
+                <div class="project">
+                    <h2>3D platformer game</h2>
+                    <p>Created a 3D platformer game using Unity</p>
+                </div>
+            </div>
+        </div>
+        <div id="resume">
+            <h1>My Resume</h1>
+            <img src="resume.png" alt="Resume">
+        </div>
+        <div id="contact">
+            <footer>
+                <h1>Contact Me</h1>
+                <p>Email: <a href="mailto:cole.tomlinson@mohawkcollege.ca">cole.tomlinson@mohawkcollege.ca</a></p>
+                <p>Phone: <a href="tel:2895272171">289-527-2171</a></p>
+            </footer>
+        </div>
     </body>
 </html>
